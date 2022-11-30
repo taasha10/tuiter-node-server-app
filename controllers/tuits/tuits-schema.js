@@ -3,6 +3,14 @@ const schema = mongoose.Schema({
                                    tuit: String,
                                    likes: Number,
                                    liked: Boolean,
+                                   dislikes: Number,
+                                   handle: String,
+                                   time: String,
+                                   image: {
+                                       type:String,
+                                       default:"User.png"
+                                   }
+
                                }, {collection: 'tuits'});
 export default schema;
 // load the mongoose library

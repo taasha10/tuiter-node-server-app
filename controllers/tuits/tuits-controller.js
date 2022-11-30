@@ -12,6 +12,7 @@ const createTuit = async(req, res) => {
     newTuit.handle = "@nasa";
     newTuit.time= "Just now";
     newTuit.image= "nasa.jpeg";
+    console.log(newTuit);
     // not using array anymore
 // actual tuit inserted in database
 // with DAO's createTuit
